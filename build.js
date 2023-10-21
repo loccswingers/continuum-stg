@@ -13,7 +13,7 @@ await mkdir('dist');
 
 // don't compile these files
 await copyFile('src/sw.js', 'dist/sw.js');
-await copyFile('src/uv.config.js', 'dist/uv.config.js');
+await copyFile('src/conti.config.js', 'dist/conti.config.js');
 
 await build({
     platform: 'browser',
@@ -22,8 +22,8 @@ await build({
     entryPoints: {
         'uv.bundle': './src/rewrite/index.js',
         'uv.client': './src/client/index.js',
-        'uv.handler': './src/uv.handler.js',
-        'uv.sw': './src/uv.sw.js',
+        'uv.handler': './src/conti.handler.js',
+        'uv.sw': './src/conti.sw.js',
     },
     define: {
         'process.env.ULTRAVIOLET_VERSION': JSON.stringify(
