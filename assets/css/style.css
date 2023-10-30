@@ -1,0 +1,331 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+/* ELEMENTS */
+p {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  color: #e8e8e8;
+}
+iframe + p {
+  padding: 10px;
+}
+p + sub {
+  font-family: "Roboto Mono", monospace;
+  clear: both;
+  display: grid;
+  align-items: center;
+  bottom: 10px;
+}
+.special-sub {
+  font-family: "Roboto Mono", monospace;
+  clear: both;
+  display: block !important;
+  position: static !important;
+  margin-bottom: 1vw;
+}
+sub {
+  font-family: "Roboto Mono", monospace;
+  clear: both;
+  display: grid;
+  align-items: center;
+  margin-bottom: 1vw;
+}
+body {
+  background-color: #1e1e1e;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+  /*background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)), url("space.gif"); */
+  background-position: center;
+  background-size:30%;
+}
+
+iframe {
+  border: #000000;
+  display: block;
+  position: fixed;
+/*  margin-top: 5vw; */
+  top: 0%;
+  left: 0%;
+  background: rgba(255, 255, 255, 1);
+}
+h1 {
+  font-size: 50px;
+  color: #ffffff;
+  margin-top: -0.5vw;
+}
+h2 {
+  font-size: 25px;
+  color: #ffffff;
+}
+h3 {
+  font-size: 25px;
+  font-weight: 100;
+  color: #c7c7c7;
+  margin-top: -0.5vw;
+}
+h2 + h1 + h3 {
+  display: grid;
+  align-items: center;
+}
+hr {
+  width: 40%;
+  margin-bottom: 1vw;
+  margin-top: -1vw;
+}
+sub {
+  color: #a1a1a1;
+  margin-bottom: 1vw;
+  font-weight: 500;
+  font-size: 1vw;
+}
+
+.section {
+  display:inline-flex;
+  justify-content:left;
+  user-select: none;
+  width:auto;
+  height: 3vw;
+  background: rgba(20, 20, 20, 0.25);
+  box-shadow: 0 0 18px 6px rgba(20, 20, 20, 1);
+  backdrop-filter: blur(3px);
+  border:none;
+  border-radius: 10px;
+}
+.favi {
+  cursor: pointer;
+  margin-top: 0.3vw;
+  margin-left: 0.5vw;
+  width: 2.25vw;
+  height: 2.25vw;
+  background: rgba(10, 10, 10, 0.25);
+  box-shadow: 0 0 18px 6px rgba(20, 20, 20, 1);
+}
+.favi-img {
+  width: 2.25vw;
+  height: 2.25vw;
+}
+/* chrome Bar */
+input[type="pBar"] {
+  user-select:none;
+  width: 60%;
+  background: rgba(20, 20, 20, 0.25);
+  box-shadow: 0 0 18px 6px rgba(20, 20, 20, 1);
+  backdrop-filter: blur(3px);
+  border:none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.5vw;
+ /* font-weight: 550; */
+  padding: 0.8vw 1.5vw;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1;
+  outline: none;
+}
+/* Changelog */
+.changelog {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  padding: 2vw 0vw;
+  background: rgba(20, 20, 20, 0.25);
+  border:none;
+  border-radius: 10px;
+  box-shadow: 0 0 18px 6px rgba(20, 20, 20, 1);
+}
+.changelog hr{
+  width: 100%;
+}
+/* hyperlink styling */
+a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+a:hover {
+  transform: scale(1.08);
+}
+/* search */
+#search-items {
+  margin-top: 0.5vw;
+  width: 85vw;
+}
+.search {
+    display: grid;
+    align-items: center;
+    user-select: none;
+    margin-top: 6vw;
+    width: 60%;
+}
+.search input {
+    background: rgba(20, 20, 20, 0.25);
+    box-shadow: 0 0 18px 6px rgba(20, 20, 20, 1);
+    backdrop-filter: blur(3px);
+    border:none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 550;
+    padding: 0.8vw 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+    outline: none;
+}
+.search input::placeholder {
+    color: #999999;
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+.search-item {
+  width: 11.1vw;
+  height: 11.1vw;
+  float: left;
+  margin: .5vw;
+  font-size: 1vw;
+}
+.search-img {
+  height: 11vw;
+  width: 11vw;
+  clip-path: border-box;
+  transition: transform .25s;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 30px 5px rgba(0,0,0,2);
+}
+.search-img:hover {
+  transform: scale(1.08);
+  /*filter: brightness(105%);*/
+  box-shadow: 0 0 8px 6px rgba(255,255,255,2);
+}
+
+/* footer */
+.footer-container {
+  margin-top: 0vw;
+  margin-bottom: 1vw;
+  padding-bottom: 0vw;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* CLASSES */
+/* dropdown */
+.Dropdown{
+  background-color: #191919;
+  box-shadow: 0 0 18px 6px rgba(20, 20, 20, 1);
+  backdrop-filter: blur(3px);
+  border:none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.5vw;
+  font-weight: 525;
+  padding: 0.8vw 5vw;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1;
+  outline: none;
+}
+/* navbar */
+.nav-container {
+  background: rgba(20, 20, 20, 0.25);
+  box-shadow: 0 0 28px 6px rgba(20, 20, 20, 2);
+  backdrop-filter: blur(14px);
+  width: 100%;
+  height: 5vw;
+  z-index: 5;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  display:inline-flex;
+  justify-content:left;
+}
+.nav-button {
+  float: right;
+  border-radius: 5px;
+  margin-right: 0.35vw;
+  margin-top: 0.9vw;
+  width: 3vw;
+  height: 3vw;
+  background: rgba(35, 35, 35, 1);
+  box-shadow: 0 0 15px 4px rgba(32.5,32.5,32.5,1);
+  border: none;
+}
+.nav-img {
+  position:relative;
+  top: 0.4vw;
+  left: 0.4vw;
+  width: 75%;
+  height: 75%; 
+}
+.nav-button:hover {
+  filter: brightness(150%);
+  transform: scale(1.08);
+  box-shadow: 0 0 15px 2px rgba(60,60,60,0.5);
+}
+/* logos */
+.logo {
+  padding-top: 1vw;
+  width: 12vw;
+  height: 3vw;
+  margin-right: 68vw;
+  margin-left: 2vw;
+  margin-bottom: 0.8vw;
+}
+.logo2 {
+  padding-top: 1vw;
+  width: 40vw;
+  height: 10vw;
+  margin-top: 8vw;
+  margin-bottom: 2vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/* buttons */
+.s-button {
+  background: rgba(18, 18, 18, 0.25);
+  box-shadow: 0 0 15px 2px rgba(18,18,18,1);
+  margin: 0.15vw;
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.5vw;
+  padding: 0.8vw 2.5vw;
+}
+.s-button:hover {
+  filter: brightness(150%);
+  transform: scale(1.08);
+  box-shadow: 0 0 8px 6px rgba(255,255,255,2);
+}
+.game-button {
+  float: right;
+  border-radius: 10px;
+  width: 7vmin;
+  height: 7vmin;
+  background-color: rgba(0,0,0, 0.2);
+  border: none;
+  position: fixed;
+  top: 15vmin;
+  right: 10px;
+}
+.gb-img {
+  width: 80%;
+  height: 80%; 
+  position:absolute;
+  top: 10%;
+  left: 10%;
+}
+#fs-button.game-button {
+  cursor: pointer;
+  position:fixed;
+  top: 22.5vmin;
+  right: 10px;
+}
+img + a {
+  display: block;
+}

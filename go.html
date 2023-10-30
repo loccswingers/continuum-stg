@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Unblocked games website for Everybody" id="meta-description"/>
+    <meta name="keywords" content="continuum, unblocked, unblocked continuum" id="meta-keywords"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--  <link rel="icon" type="image/png" href="favicon.png"/> -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <noscript>Sorry, you'll have to turn on JavaScript in your browser settings to access this content.</noscript>
+    <script>
+        // url params
+        let params = new URLSearchParams(document.location.search);
+        let gameTitle = params.get('title');
+        let iframeWidth = params.get('width');
+        let iframeHeight = params.get('height');
+        let gameUrl = params.get('url');
+
+        let metaDescription = document.getElementById('meta-description');
+        let metaKeywords = document.getElementById('meta-keywords');
+        let title = document.getElementsByTagName('title')[0];
+        let header = document.createElement('h1');
+        let iframe = document.createElement('iframe');
+
+        // set meta description
+        metaDescription.setAttribute('content', `Play ${gameTitle}`);
+        // set meta keywords
+        metaKeywords.setAttribute('content', `continuum, ${gameTitle}, ${gameTitle} game, unblocked, unblocked ${gameTitle}, unblocked continuum`);
+        // set title content
+      //  title.innerHTML = `${gameTitle} - CONTINUUM`;
+        // set iframe content and append to body
+        iframe.setAttribute('src', gameUrl);
+        iframe.setAttribute('width', "100%");
+        iframe.setAttribute('height', "100%");
+        iframe.setAttribute('allow', 'autoplay');
+        iframe.setAttribute('scrolling', 'yes');
+        iframe.setAttribute('allowfullscreen', 'yes')
+        document.body.append(iframe);
+        // set header content and append to body
+      //  header.innerHTML = gameTitle;
+      //  document.body.append(header);
+        function fullScreen() {
+          	document.querySelector('iframe').requestFullscreen()
+        }
+    </script>
+  <a href="home.html"class="game-button"><img src="assets/buttons/b-button.png"alt="back"class="gb-img"></a>
+  <a onclick="fullScreen()"id="fs-button"class="game-button"><img src="assets/buttons/fs-button.png"alt="full screen"class="gb-img"></a>
+   <script src="assets/js/cloaking.js"></script>
+  <script src="assets/js/themes.js"></script>
+</body>
+</html>
