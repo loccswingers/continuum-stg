@@ -30,9 +30,6 @@ function setfavicon(icon) {
   }
 }
 
-settitle("Portal | Clever")
-setfavicon("/assets/js/favicons/clever.ICO")
-
 function setGoogle() {
   settitle("Google")
   setfavicon("/assets/js/favicons/google.ICO")
