@@ -17,7 +17,7 @@ function settitle(title) {
   
   } else {
   localStorage.removeItem("title")
-  document.title = "New Tab"
+  document.title = "Clever | Portal"
   }
 }
 function setfavicon(icon) {
@@ -26,7 +26,7 @@ function setfavicon(icon) {
   document.querySelector("link[rel='shortcut icon']").href = icon;
   } else {
   localStorage.removeItem("favicon")
-  document.querySelector("link[rel='shortcut icon']").href = "/assets/js/favicons/new-tab.ICO";
+  document.querySelector("link[rel='shortcut icon']").href = "/assets/js/favicons/clever.ICO";
   }
 }
 
