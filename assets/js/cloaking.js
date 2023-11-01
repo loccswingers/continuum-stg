@@ -14,42 +14,31 @@ function settitle(title) {
   if (title !== "") {
   localStorage.setItem("title", title)
   document.title = title
-  
-  } else {
-  localStorage.removeItem("title")
-  document.title = "Clever | Portal"
   }
 }
 function setfavicon(icon) {
   if (icon !== "") {
   localStorage.setItem("favicon", icon)
   document.querySelector("link[rel='shortcut icon']").href = icon;
-  } else {
-  localStorage.removeItem("favicon")
-  document.querySelector("link[rel='shortcut icon']").href = "/assets/js/favicons/clever.ICO";
   }
 }
 
 function setGoogle() {
   settitle("Google")
-  localStorage.removeItem("favicon")
   setfavicon("/assets/js/favicons/google.ICO")
 }
 
 function setDrive() {
   settitle("My Drive - Google Drive")
-  localStorage.removeItem("favicon")
   setfavicon("/assets/js/favicons/drive.ICO")
 }
 
 function setClever() {
   settitle("Clever | Portal")
-  localStorage.removeItem("favicon")
   setfavicon("/assets/js/favicons/clever.ICO")
 }
 
 function setReset() {
  settitle("CONTINUUM")
- localStorage.removeItem("favicon")
  setfavicon("/assets/js/favicons/default.ICO")
 }
