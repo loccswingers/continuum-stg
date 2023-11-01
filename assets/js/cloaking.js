@@ -32,20 +32,24 @@ function setfavicon(icon) {
 
 function setGoogle() {
   settitle("Google")
+  localStorage.removeItem("favicon")
   setfavicon("/assets/js/favicons/google.ICO")
 }
 
 function setDrive() {
   settitle("My Drive - Google Drive")
+  localStorage.removeItem("favicon")
   setfavicon("/assets/js/favicons/drive.ICO")
 }
 
 function setClever() {
   settitle("Clever | Portal")
+  localStorage.removeItem("favicon")
   setfavicon("/assets/js/favicons/clever.ICO")
 }
 
 function setReset() {
  settitle("CONTINUUM")
+ localStorage.removeItem("favicon")
  setfavicon("/assets/js/favicons/default.ICO")
 }
