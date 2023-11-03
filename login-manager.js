@@ -3,7 +3,8 @@ function gotoLogin(url){
 }
 
 function openAB(target_url) {
-  let win = window.open();
+  //let win = window.open();
+  let win = window.open("about:blank", "", "width=600, height=400");
   let url = target_url;
   win.document.body.style.margin = '0';
   win.document.body.style.height = '100vh';
@@ -16,7 +17,7 @@ function openAB(target_url) {
     setFavicon.setAttribute('href',favImg);
     headTitle.appendChild(setFavicon);
   }
-  setFavicons('assets/js/favicons/clever.ICO');
+  setFavicons('assets/js/favicons/new-tab.ICO');
   
   let iframe = win.document.createElement('iframe');
   iframe.style.border = 'none';
