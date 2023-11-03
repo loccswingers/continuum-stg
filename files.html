@@ -346,7 +346,7 @@
     <script>
       var url_main = "/games"
       function Goto(name, path){
-        openAB("go.html?title=" + name + "&url=" + url_main + path)
+        window.location.replace("go.html?title=" + name + "&url=" + url_main + path);
       }
       function Search(){
         let input = document.getElementById("searchbar");

@@ -1,10 +1,10 @@
-function gotoLogin(url){
-  window.location.replace(url);
+function Reload(){
+  window.location.reload();
 }
 
 function openAB(target_url) {
   //let win = window.open();
-  let win = window.open("about:blank", "", "width=600, height=400");
+  let win = window.open("about:blank", "", "width=1200, height=800");
   let url = target_url;
   win.document.body.style.margin = '0';
   win.document.body.style.height = '100vh';
