@@ -12,7 +12,7 @@ function openAB(target_url) {
     setFavicon.setAttribute('href',favImg);
     headTitle.appendChild(setFavicon);
   }
-  setFavicons('/favicons/clever.ICO');
+  setFavicons('assets/js/favicons/clever.ICO');
   
   let iframe = win.document.createElement('iframe');
   iframe.style.border = 'none';
