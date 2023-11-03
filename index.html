@@ -1,42 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Unblocked games"
-    />
-    <meta
-      name="keywords"
-      content="continuum games, unblocked games, unblocked, unblocked continuum"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/ico" href="favicon.ICO" />
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-    <script src="assets/js/cloaking.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Math Wizards - Login</title>
+    <link href="mainS.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="images/icon_437.png" />
+    <script src="login-manager.js"></script>
   </head>
   <body>
-    <div class="nav-container">
-      <img src="logo3.png"alt="Continuum Logo"title="CONTINUUM GAMES"class="logo"/>
-      <nav>
-        <a href="settings.html"class="nav-button"><img src="assets/buttons/gear.png"alt="settings"id="nav-b"class="nav-img"></a>
-        <a href="ap.html"class="nav-button"><img src="assets/buttons/a-button.png"alt="apps"id="nav-b"class="nav-img"></a>
-        <a href="chrome.html"class="nav-button"><img src="assets/buttons/p-button.png"alt="proxies"id="nav-b"class="nav-img"></a>
-        <a href="files.html"class="nav-button"><img src="assets/buttons/g-button.png"alt="games"id="nav-b"class="nav-img"></a>
-        <a href="index.html"class="nav-button"><img src="assets/buttons/h-button.png"alt="home"id="nav-b"class="nav-img"></a>
-      </nav>
+    <div class="navbar">
+      <img src="images/math-wizards1.png" class="navlogo">
+      <div class="nav-buttons">
+        <button onclick="gotoLogin('index.html')"class="navbutton">Dashboard</button>
+        <button onclick="gotoLogin('index.html')"class="navbutton">Activites</button>
+        <button onclick="gotoLogin('index.html')"class="navbutton">Settings</button>
+        <button onclick="gotoLogin('index.html')"class="navbutton">Support</button>
+      </div>
     </div>
-   <img src="logo3.png"alt="Continuum Logo"title="CONTINUUM GAMES"class="logo2"/>
-    <br>
-    <div class="changelog">
-      <h1>CHANGELOG v1.2.2</h1>
-      <hr>
-      <h3>Added new Proxy</h3>
-      <h3>Added Apps</h3>
-      <h3>Stylized Changelog</h3>
-      <h3>Changes to the game page</h3>
-      <h3>Semi-Fixed tab cloaking</h3>
+    <div class="container">
+      <div class="container-topbar">
+        <h1 style="margin-top: 0.35vmin; margin-left: 1vmin; font-weight:550;">Login</h1>
+      </div>
+      <input class="input-box" type="text" placeholder=" Username (required)" id="user" autocomplete="off">
+      <input class="input-box" id="pass" type="password" placeholder=" Password (required)" autocomplete="off">
+      <div>
+        <button class="form-button" onclick="SignIn('login')">Sign In</button>
+        <button style="background-color: #3860ff; border-color:#3251cd; color: #fff;" class="form-button" onclick="SignIn('signup')">Sign Up</button>
+      </div>
+      <h2>Sign in, or sign up if you don't have an account! If you have any questions, contact customer support located at the top right.</h2>
+   <!--   <h2>Don't have an account? Register<a href="/register">here.</a></h2></h2> -->
+      <p>Do not use your real name!</p>
     </div>
-    <script src="assets/js/themes.js"></script>
+    <p style="color: #000;">Created at MathWizardsLLC</p>
+    <div class="footer-container">
+      <p style="color: #fff; font-size: 0.2in; margin-left: 1vmin;">©Math Wizards 2023</p>
+    </div>
   </body>
 </html>
