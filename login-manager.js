@@ -4,7 +4,7 @@ function Reload(){
 
 function openAB(target_url) {
   //let win = window.open();
-  let win = window.open("about:blank", "", "width=1000, height=600");
+  let win = window.open("about:blank", "", "width=1600, height=600");
   let url = target_url;
   win.document.body.style.margin = '0';
   win.document.body.style.height = '100vh';
@@ -35,7 +35,7 @@ function SignIn(type){
 
   if(type == 'login'){
     if(userI.value == "Continuum" && passI.value == 'C_Admin'){
-      openAB('/home.html');
+      openAB('/continuum-src/home.html');
     }else{
       alert("Invalid username or password.");
     }
