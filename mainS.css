@@ -55,16 +55,15 @@ p {
   border-top-left-radius: 5px;
   border-color: #3251cd;
   border-style:solid;
-  background-color: #3667c9;
+  background: linear-gradient(90deg, rgba(54,103,201,1) 10%, rgba(82,140,255,1) 50%, rgba(54,103,201,1) 90%);
   box-shadow: 0 0 14px 1px rgba(20, 20, 20, 0.3);
 }
 
-.navbar, .footer-container, .navbutton {
-  background-color: #3667c9;
-  box-shadow: 0 0 14px 1px rgba(20, 20, 20, 0.3);
+.navbar, .footer-container {
+  background: linear-gradient(90deg, rgba(54,103,201,1) 10%, rgba(82,140,255,1) 50%, rgba(54,103,201,1) 90%);
+  box-shadow: 0 0 14px 1px rgba(20, 20, 20, 0.5);
   display:inline-flex;
   justify-content:left;
-  border-radius: 5px;
 }
 .navlogo {
   width: 3in;
@@ -90,6 +89,11 @@ p {
   text-align: center;
   font-size: 0.2in;
   cursor: pointer;
+  background: rgba(0,0,0,0);
+  box-shadow: 0 0 14px 1px rgba(20, 20, 20, 0.3);
+  display:inline-flex;
+  justify-content:left;
+  border-radius:5px;
 }
 .nav-buttons {
   position: absolute;
@@ -133,7 +137,7 @@ p {
 }
 .form-button:hover {
   background-color: #e3e3e3;
-  color: #000000;
+  color: #ffffff;
 }
 .form-button, .input-box {
   background-color: #f5f5f5;
@@ -143,6 +147,9 @@ p {
 .form-button, .navbutton {
   transition:0.2s;
 }
-.form-button:hover, .navbutton:hover {
-  transform: scale(1.02);
+.form-button:hover {
+  transform: scale(1.03);
+}
+.navbutton:hover {
+  transform: scale(1.06);
 }

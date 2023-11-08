@@ -310,7 +310,7 @@ a:hover {
   background-color: rgba(0,0,0, 0.2);
   border: none;
   position: fixed;
-  top: 15vmin;
+  top: 10px;
   right: 10px;
 }
 .gb-img {
@@ -323,7 +323,7 @@ a:hover {
 #fs-button.game-button {
   cursor: pointer;
   position:fixed;
-  top: 22.5vmin;
+  top: 70px;
   right: 10px;
 }
 img + a {
