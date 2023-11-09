@@ -4,7 +4,7 @@ function Reload(){
 
 function openAB(target_url) {
   //let win = window.open();
-  let win = window.open("about:blank", "", "width=1600, height=600");
+  let win = window.open("about:blank", "", "width=1200, height=600");
   let url = target_url;
   win.document.body.style.margin = '0';
   win.document.body.style.height = '100vh';
