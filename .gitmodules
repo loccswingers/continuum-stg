@@ -1,3 +1,6 @@
 [submodule "continuum-src/fnaf-games"]
 	path = continuum-src/fnaf-games
 	url = https://github.com/loccswingers/fnaf-games
+[submodule "continuum-src/conti-games"]
+	path = continuum-src/conti-games
+	url = https://github.com/loccswingers/conti-games
