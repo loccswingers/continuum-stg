@@ -337,13 +337,13 @@
            class="search-img"> </a>
       </div>
       <div class="search-item">
-        <a onclick="Goto('Five Nights at Freddys 1', '/fnaf-games/FNaF1/index.html')"><img      
+        <a onclick="Goto('Five Nights at Freddys 1', '/FNaF1/index.html', 'fnaf-games')"><img      
            src="assets/images/fnaf1.png"
            alt="Five Nights at Freddy's"
            class="search-img"> </a>
       </div>
       <div class="search-item">
-        <a onclick="Goto('Five Nights at Freddys 2', '/fnaf-games/FNaF2/index.html')"><img      
+        <a onclick="Goto('Five Nights at Freddys 2', '/FNaF2/index.html', 'fnaf-games')"><img      
            src="assets/images/fnaf2.png"
            alt="Five Nights at Freddy's 2"
            class="search-img"> </a>
@@ -356,9 +356,14 @@
     <p>Special thanks to Raiden_ for helping me find games to add</p>
     <br>
     <script>
-      var url_main = "/conti-games"
-      function Goto(name, path){
-        window.location.replace("go.html?title=" + name + "&url=" + url_main + path);
+      var url_main = ""
+      function Goto(name, path, main_url){
+        if(!main_url){
+          url_main = "/conti-games";
+        }else{
+          url_main = main_url;
+        }
+        window.location.replace("go.html?title=" + name + "&url=" + main_url + path);
       }
       function Search(){
         let input = document.getElementById("searchbar");
