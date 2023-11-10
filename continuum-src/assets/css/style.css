@@ -305,8 +305,8 @@ a:hover {
 .game-button {
   float: right;
   border-radius: 10px;
-  width: 7vmin;
-  height: 7vmin;
+  width: 55px;
+  height: 55px;
   background-color: rgba(0,0,0, 0.2);
   border: none;
   position: fixed;
@@ -323,7 +323,7 @@ a:hover {
 #fs-button.game-button {
   cursor: pointer;
   position:fixed;
-  top: 90px;
+  top: 70px;
   right: 10px;
 }
 img + a {
