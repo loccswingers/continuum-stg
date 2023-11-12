@@ -10,10 +10,10 @@ function go(url){
 function Search(){
   let inputT = document.getElementById("urlbar");
   let url = inputT.value.trim();
+
   if(!isUrl(url)){
-  //  url = 'https://www.google.com/search?q=' + url;
     go('https://www.google.com/search?q=' + url);
-    else if (url.startsWith('https://') || url.startsWith('http://')){
+    else if(url.startsWith('https://') || url.startsWith('http://')){
       go(url);
     }
   }
