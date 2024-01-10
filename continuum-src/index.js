@@ -13,7 +13,7 @@ function Search(){
 
   if(!isUrl(url)){
     go('https://www.google.com/search?q=' + url);
-    else if(url.startsWith('https://') || url.startsWith('http://')){
+    elseif(url.startsWith('https://') || url.startsWith('http://'));{
       go(url);
     }
   }
