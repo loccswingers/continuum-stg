@@ -10,14 +10,13 @@ function openAB(target_url) {
   win.document.body.style.height = '100vh';
   win.document.title = 'New Tab';
 
-  function setFavicons(favImg){
-    let headTitle = document.querySelector('head');
-    let setFavicon = document.createElement('link');
-    setFavicon.setAttribute('rel','shortcut icon');
-    setFavicon.setAttribute('href',favImg);
-    headTitle.appendChild(setFavicon);
+  function setfavicon(icon) {
+    if (icon !== "") {
+    localStorage.setItem("favicon", icon)
+    document.querySelector("link[rel='shortcut icon']").href = icon;
+    }
   }
-  setFavicons('assets/js/favicons/new-tab.ICO');
+  setfavicon('assets/js/favicons/new-tab.ICO');
   
   let iframe = win.document.createElement('iframe');
   iframe.style.border = 'none';
