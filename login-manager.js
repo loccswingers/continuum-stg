@@ -8,15 +8,7 @@ function openAB(target_url) {
   let url = target_url;
   win.document.body.style.margin = '0';
   win.document.body.style.height = '100vh';
-  win.document.title = 'New Tab';
-
-  function setfavicon(icon) {
-    if (icon !== "") {
-    localStorage.setItem("favicon", icon)
-    document.querySelector("link[rel='shortcut icon']").href = icon;
-    }
-  }
-  setfavicon('assets/js/favicons/new-tab.ICO');
+  win.document.title = 'Loading...';
   
   let iframe = win.document.createElement('iframe');
   iframe.style.border = 'none';
