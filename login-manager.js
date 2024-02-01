@@ -1,5 +1,6 @@
 function Reload(){
   window.location.reload();
+  alert("You need to login/signup to enter this page.");
 }
 
 function openAB(target_url) {
@@ -27,6 +28,7 @@ function SignIn(type){
   if(type == 'login'){
     if(userI.value == "Continuum" && passI.value == 'C_Admin'){
       openAB('/continuum-src/home.html');
+      window.close('','_parent','');
     }else{
       alert("Invalid username or password.");
     }
