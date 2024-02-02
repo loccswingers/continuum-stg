@@ -183,9 +183,6 @@ a:hover {
   float: left;
   margin: .5vw;
   font-size: 1vw;
-  box-shadow: 1px 1px 73px 12px rgba(0,0,0,0.75) inset;
-  -webkit-box-shadow: 1px 1px 73px 12px rgba(0,0,0,0.75) inset;
-  -moz-box-shadow: 1px 1px 73px 12px rgba(0,0,0,0.75) inset;
 }
 .search-img {
   height: 11vw;
@@ -194,12 +191,18 @@ a:hover {
   transition: transform .25s;
   cursor: pointer;
   border-radius: 10px;
+  box-shadow: 1px 1px 73px 12px rgba(0,0,0,0.8) inset;
+  -webkit-box-shadow: 1px 1px 73px 12px rgba(0,0,0,0.8) inset;
+  -moz-box-shadow: 1px 1px 73px 12px rgba(0,0,0,0.8) inset;
   /*box-shadow: 0 0 30px 5px rgba(0,0,0,2);*/
 }
 .search-img:hover {
   transform: scale(1.08);
   /*filter: brightness(105%);*/
-  box-shadow: 0 0 1vw 1vw rgba(255,255,255,2);
+ /* box-shadow: 0 0 1vw 1vw rgba(255,255,255,2); */
+ box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
+-webkit-box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
 }
 
 /* footer */
