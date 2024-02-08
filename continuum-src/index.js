@@ -4,7 +4,8 @@ function RegisterWorker(){
 
 function go(url){
   RegisterWorker()
-  window.location.replace(__uv$config.prefix + __uv$config.encodeUrl(url));
+  //window.location.replace(__uv$config.prefix + __uv$config.encodeUrl(url));
+  window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
 }
 
 function Search(){
@@ -13,8 +14,11 @@ function Search(){
 
   if(!isUrl(url)){
     go('https://www.google.com/search?q=' + url);
-    elseif(url.startsWith('https://') || url.startsWith('http://'));{
+  elseif(url.startsWith('https://') || url.startsWith('http://'));{
       go(url);
+    }
+  elseif(isUrl(url));{
+      go(url)
     }
   }
 /*  if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
